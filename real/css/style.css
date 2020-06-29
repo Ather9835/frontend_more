@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+
+    height: 900px;
+    width: 100%;
+    background-color: black;
+    padding-top: 550px;
+}
+
+.first .container{
+
+    height: 100px;
+    /* border: 2px solid red; */
+    width:50%;
+    margin:auto;
+}
+
+.first .container p{
+    color: #b4ff00;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    line-height: 48px;
+}
+
+.bubble{
+    width: 220px;
+    height: 220px;
+    background: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 1px solid white;
+    border-radius: 255px;
+    animation: fire 10s infinite ease-in-out;
+    opacity: 0.5;
+
+}
+
+@keyframes fire{
+    0%{
+
+        left:20vh;
+        top: 10vh;
+        
+    }
+    20%{
+        left:30vh;
+        top: 40vh;
+        
+        
+    }
+    30%{
+        left:60vh;
+        top: 50vh;
+
+    }
+    40%{
+        left:80vh;
+        top: 70vh;
+        
+        
+    }
+    60%{
+        left:120vh;
+        top: 90vh;
+        
+        
+    }
+    80%{
+        left:130vh;
+        top: 60vh;
+        
+        
+    }
+    85%{
+
+        left:110vh;
+        top: 40vh;
+        
+
+    }
+    90%{
+
+        left:90vh;
+        top: 30vh;
+
+    }
+    95%{
+
+        left:20vh;
+        top: 10vh;
+
+    }
+    100%{
+        left:30vh;
+        top: 40vh;
+        
+    }
+}
+
+.second{
+
+    height: 755px;
+    width: 100%;
+    background-color: #a15361;
+    padding: 92px 142px;
+}
+    
+
+
+
+.second .container{
+
+    /* border: 2px solid red; */
+    width: 40%;
+    
+}
+.second .container .fitem{
+
+    font-size: 87px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    line-height: 68px;
+    color: #c0ff00;
+    letter-spacing: -4px;
+}
+.second .container .sitem{
+    font-size: 24px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    color: #c0ff00;
+    margin: 40px 1px 0px 1px;
+    line-height: 25px;
+   
+}
+.third{
+
+    height: 755px;
+    width: 100%;
+    background-color: #5384a1;
+    padding: 92px 142px;
+}
+.third .container{
+
+    /* border: 2px solid red; */
+    width: 75%;
+    
+}
+.third .container .fitem{
+
+    font-size: 87px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    line-height: 68px;
+    color: #c0ff00;
+    letter-spacing: -7px;
+}
+
+.third .container .sitem{
+    font-size: 28px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    color: #c0ff00;
+    margin: 40px 1px 0px 1px;
+    line-height: 25px;
+   
+}
+.fourth{
+
+    height: 855px;
+    width: 100%;
+    background-color: black;
+    padding: 102px 142px;
+}
+.fourth .container{
+
+    /* border: 2px solid red; */
+    width: 75%;
+    
+}
+.fourth .container .fitem{
+
+    font-size: 87px;
+    font-weight: 900;
+    font-family: 'Mukta', sans-serif;
+    line-height: 68px;
+    color: #c0ff00;
+    letter-spacing: -7px;
+}
+
+.fourth .container .sitem{
+    font-size: 28px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    color: #c0ff00;
+    margin: 40px 1px 0px 1px;
+    line-height: 25px;
+   
+}
+.fifth{
+    overflow: hidden;
+}
+.figure{
+    width:180%;
+    display: flex;
+    position: relative;
+    transition: all 1s linear;
+    left: 0;
+}
+.firstelement{
+    height: 700px;
+    width: 90%;
+    padding-top: 102px;
+    padding-left:142px;
+    background-color: yellow;
+    transition: all 1s linear;
+}
+.secondelement{
+    height: 700px;
+    width: 90%;
+    background-color: red;
+    transition: all 1s linear;
+}
+.firstelement .container{
+
+    /* border: 2px solid red; */
+    width: 60%;
+    
+}
+.firstelement .container .fitem{
+
+    font-size: 87px;
+    font-weight: 900;
+    font-family: 'Mukta', sans-serif;
+    line-height: 68px;
+    color: black;
+    letter-spacing: -7px;
+}
+
+.firstelement .container .sitem{
+    font-size: 28px;
+    font-weight: 1000;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+    margin: 40px 1px 0px 1px;
+    line-height: 25px;
+   
+}
+#btn{
+
+    font-family: 'Mukta', sans-serif;
+    width: 123px;
+    height: 33px;
+    font-size: 18px;
+    color: white;
+    background: black;
+    border: 1px black;
+    border-radius: 36px;
+    margin: 23px 0px;
+} 
+
+.left{
+    left: -80%;
+}

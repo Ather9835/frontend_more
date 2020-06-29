@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#navbar{
+
+    display: flex;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Bree Serif', serif;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+
+#navbar .left{
+
+    display: flex;
+    width: 70%;
+    /* background-color: aqua; */
+    padding: 9px 17px;
+    align-items: center;
+}
+
+#navbar .left img{
+
+    width: 100px;
+}
+
+#navbar .left ul{
+   list-style: none;
+   display: flex;
+   
+}
+
+#navbar .left ul li a{
+    
+    text-decoration: none;
+    color: white;
+    padding: 3px 37px;
+    font-size: 1.3rem;
+
+}
+
+#navbar .right{
+    width: 30%;
+    /* background-color: violet; */
+    text-align: right;
+    padding: 2px 31px
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/chicag.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#navbar input{
+
+    height: 19px;
+    margin: 0px 38px;
+    padding: 6px;
+    border-radius: 9px;
+    border: 0px solid black
+}
+
+button{
+
+    height: 29px;
+    padding: 0px 15px;
+    font-size: 17px;
+    border-radius: 9px;
+    border: 0px solid black;
+    font-family: 'Bree Serif', serif;
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 209px;
+}
+
+.home img{
+
+    padding: 11px;
+    height: 200px;
+    border-radius: 180px;
+}
+
+
+
+
+.center{
+
+    text-align: center;
+}
+
+.h-primary{
+
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 9px;
+}
+
+.h-secondary{
+
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    padding: 2px;
+
+}
+
+.my-2{
+    margin-top: 25px;
+}
+
+
+.mx-2{
+    margin-right: 10px;
+}
+
+.btn2{
+    background: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    height: 37px;
+}
+
+.btn2:hover{
+    background: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: black;
+    height: 37px;
+}
+
+.section {
+    display: flex;
+    padding: 114px 0px;
+    margin: auto;
+    width: 78%;
+}
+
+.section img{
+
+    height: 230px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 44px;
+}
+
+.lefti{
+
+    height: 230px;
+    overflow: hidden;
+    padding: 0px 78px;
+}
+
+.rigdir{
+    flex-direction: row-reverse;
+}
+
+.td{
+
+    text-align: justify;
+}
+
+.dark{
+
+    color: black;
+}
+
+/* .contact{
+
+    width : 50%;
+    display: block;
+    margin: auto;
+    background-color: blanchedalmond;
+} */
+
+.contact{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: #f1f0ee;
+    background-image: url('../img/geometric.webp');
+    opacity: 0.7; */
+    
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    background-image: url('../img/geometric.webp');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.con{
+
+    width: 31%;
+}
+
+.contact input{
+
+    width: 91%;
+    height: 19px;
+    margin: 12px 0px;
+    padding: 6px;
+    border-radius: 9px;
+    border: 0px solid black
+
+
+}
+
+
+.bg-dark{
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.burger{
+
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 23px;
+
+
+}
+
+.line{
+
+    width: 47px;
+    margin: 11px 13px;
+    border: 3px solid white;
+    background-color: white;
+}
+
+
+@media only screen and (max-width:1210px){
+
+    #navbar{
+        flex-direction: column;
+       
+    }
+
+    #navbar .left{
+
+        flex-direction: column;
+    }
+
+    #navbar .left ul{
+       flex-direction: column;
+       transition: all 1s ease-in;
+     }
+
+     .list{
+         text-align: center;
+         /* display: none; */
+     }
+     .home{
+        height: 75vh;
+        padding: 0px 0px;
+        flex-direction: column-reverse;
+     }
+
+     #navbar .right{
+        text-align: center;
+        /* display: none; */
+        transition: all 1s ease-in;
+    }
+
+    #navbar input {
+        margin: 0px 0px;
+        width:100%;
+        margin-bottom: 10px;}
+
+        #navbar button {
+
+            margin-bottom: 10px;}
+
+    .burger{
+        display: block;
+    }
+
+    .dis{
+
+        display: none;
+    }
+    .section{
+        flex-direction: column-reverse;
+        
+    }
+    .section img {
+       
+        width: 100%;
+    }
+    .con{
+        width:68%;
+    }
+
+    .lefti{
+        padding: 0px 0px;
+        margin-top: 3px;
+    }
+
+    .home img{
+
+        height: 151px;
+    }
+
+    .sec{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
